@@ -1,7 +1,9 @@
 package com.devsan.seenitassignment.Volley;
 
+import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.Volley;
+import com.devsan.seenitassignment.util.MyApplication;
 
 public class VolleySingletonQueue {
 

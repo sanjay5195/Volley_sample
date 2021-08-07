@@ -1,12 +1,17 @@
 package com.devsan.seenitassignment.model;
 
+import com.devsan.seenitassignment.Volley.VolleyWrapper;
+import com.devsan.seenitassignment.util.DataResponseListener;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
 
-public class BookDataSource {
+public class BooksDataSource {
 
     private final static String BASE_URL = "https://tpbookserver.herokuapp.com/";
     private final static String BOOKS_LIST_URL = "books";
