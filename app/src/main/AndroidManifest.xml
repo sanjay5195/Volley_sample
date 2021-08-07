@@ -12,8 +12,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SeenItAssignment">
-        <activity android:name=".ui.BookDetailActivity" />
-        <activity android:name=".ui.MainActivity">
+        <activity android:name=".ui.BookDetailActivity"
+            android:theme="@style/Theme.AppCompat.Light"/>
+        <activity android:name=".ui.MainActivity"
+            android:theme="@style/Theme.AppCompat.Light">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
