@@ -8,6 +8,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.devsan.seenitassignment.R;
 
+import static com.devsan.seenitassignment.R.style.Theme_AppCompat_Dialog_Alert;
+import static com.devsan.seenitassignment.R.style.Theme_MyDialog;
+
 public class BaseActivity extends AppCompatActivity {
 
     protected ProgressDialog mProgressDialog;
@@ -16,7 +19,7 @@ public class BaseActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mProgressDialog = new ProgressDialog(this,
-                R.style.Theme_AppCompat_Dialog_Alert);
+                R.style.Theme_MyDialog);
     }
 
     public void showProgress() {

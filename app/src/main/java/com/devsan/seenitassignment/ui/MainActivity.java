@@ -1,5 +1,6 @@
 package com.devsan.seenitassignment.ui;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.databinding.DataBindingUtil;
@@ -56,6 +57,9 @@ public class MainActivity extends BaseActivity {
             @Override
             public void cardClicked(BookVO bookVO) {
 
+                Intent intent = new Intent(MainActivity.this, BookDetailActivity.class);
+                intent.putExtra(BookDetailActivity.EXTRA_DATA, bookVO);
+                startActivity(intent);
             }
         });
         activityMainBinding.recyclerView.setLayoutManager(new LinearLayoutManager(this));

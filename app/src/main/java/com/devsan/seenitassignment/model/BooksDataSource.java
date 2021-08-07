@@ -17,8 +17,8 @@ public class BooksDataSource {
     private final static String BOOKS_LIST_URL = "books";
     private final static String BOOK_SINGLE_URL = "book/";
 
-    private VolleyWrapper volleyWrapper;
-    private Gson mGson;
+    private final VolleyWrapper volleyWrapper;
+    private final Gson mGson;
 
     public BooksDataSource() {
         volleyWrapper = new VolleyWrapper();

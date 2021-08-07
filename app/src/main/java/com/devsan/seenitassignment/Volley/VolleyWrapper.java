@@ -14,8 +14,8 @@ import org.json.JSONObject;
 public class VolleyWrapper {
 
     public static final String TAG = "devdroid";
-    private int defaultMaxNumberOfRetry = 2;
-    private int defaultMaxTimeoutInMill = 120 * 1000;
+    private final int defaultMaxNumberOfRetry = 2;
+    private final int defaultMaxTimeoutInMill = 120 * 1000;
 
     public void getRequest(String url, DataResponseListener<Object> listener) {
 

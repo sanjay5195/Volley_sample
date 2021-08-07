@@ -17,8 +17,8 @@ import java.util.ArrayList;
 
 public class BooksAdapter extends RecyclerView.Adapter<BooksAdapter.ViewHolder> {
 
-    private ArrayList<BookVO> dataModelList;
-    private CustomClickListener clickListener;
+    private final ArrayList<BookVO> dataModelList;
+    private final CustomClickListener clickListener;
 
     public BooksAdapter(ArrayList<BookVO> dataModelList, CustomClickListener clickListener) {
         this.dataModelList = dataModelList;
